@@ -1,3 +1,4 @@
+require 'config/environment'
 require 'medium'
 
 def raises_thing
