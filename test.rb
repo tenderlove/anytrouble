@@ -8,11 +8,9 @@ end
 
 def test
   all = Medium.all
-  p class << all; self; end.ancestors
-  p all.method(:any?).source_location
-  p all.any? { |m| raises_thing; true }
-  p all.any? { |m| raises_thing; true }
+  all.any? { |m| raises_thing; true }
 end
 
+p test # => nil
 p test # => nil
 p test # => nil
